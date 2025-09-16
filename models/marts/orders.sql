@@ -44,7 +44,7 @@ compute_booleans as (
     select
         orders.*,
 
-        order_items_summary.order_cost,
+        order_items_summary.order_cost_new_name,
         order_items_summary.order_items_subtotal,
         order_items_summary.count_food_items,
         order_items_summary.count_drink_items,
