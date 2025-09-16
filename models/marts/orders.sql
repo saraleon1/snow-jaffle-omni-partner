@@ -17,7 +17,7 @@ order_items_summary as (
     select
         order_id,
 
-        sum(supply_cost) as order_cost_new_name,
+        sum(supply_cost) as order_cost,
         sum(product_price) as order_items_subtotal,
         count(order_item_id) as count_order_items,
         sum(
@@ -44,7 +44,7 @@ compute_booleans as (
     select
         orders.*,
 
-        order_items_summary.order_cost_new_name,
+        order_items_summary.order_cost,
         order_items_summary.order_items_subtotal,
         order_items_summary.count_food_items,
         order_items_summary.count_drink_items,
