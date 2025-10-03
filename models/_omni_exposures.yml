@@ -1,0 +1,23 @@
+---
+version: 2
+exposures:
+- name: "dbt_Demo_Workbook"
+  label: "dbt Demo Workbook"
+  type: "dashboard"
+  url: "https://saraleon.omniapp.co/dashboards/9b66bd00"
+  depends_on:
+  - "ref('orders')"
+  - "ref('stg_customers')"
+  owner:
+    name: "Sara Leon"
+    email: "sara@omni.co"
+- name: "dbt_Demo_Workbook_copy"
+  label: "dbt Demo Workbook copy"
+  type: "dashboard"
+  url: "https://saraleon.omniapp.co/dashboards/131508ba"
+  depends_on:
+  - "ref('orders')"
+  - "ref('stg_customers')"
+  owner:
+    name: "Sara Leon"
+    email: "sara@omni.co"
