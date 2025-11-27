@@ -10,5 +10,5 @@ packages:
     revision: acc7cad15a9a5cd0c2a928fafb888cffd135790e
   - git: https://github.com/saraleon1/dbt-upstream-project.git
     name: my_new_project
-    revision: a01f88ae8cde193fbf23ee2c657e2f0ca741134a
-sha1_hash: d12830e7af3d11f08db8d5bba9094b1ed6c26f2f
+    revision: f8de9b49f82c6b1ce92378dab04440a9561e128c
+sha1_hash: 447ea3c3dcdc82d347962c31857392883fc6c4b4
