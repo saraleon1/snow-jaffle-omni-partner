@@ -6,4 +6,4 @@ packages:
   - git: "https://github.com/dbt-labs/dbt-audit-helper.git"
     revision: main
   - git: "https://github.com/saraleon1/dbt-upstream-project.git"
-    revision: main
+    revision: feature-nov-27-sl
