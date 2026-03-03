@@ -14,7 +14,7 @@ models:
       - name: customer_name
         description: Customers' full name.
       - name: count_lifetime_orders
-        description: Total number of orders a customer has ever placed.
+        description: Total number of orders a customer has ever placed. ammendment
       - name: first_ordered_at
         description: The timestamp when a customer placed their first order.
       - name: last_ordered_at
