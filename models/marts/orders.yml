@@ -12,10 +12,6 @@ models:
       - type: primary_key
         columns:
           - order_id
-      - type: foreign_key
-        columns:
-          - customer_id
-        to: ref('customers')
     columns:
       - name: order_id
         description: The unique key of the orders mart.
