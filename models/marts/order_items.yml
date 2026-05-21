@@ -1,5 +1,14 @@
 models:
   - name: order_items
+    constraints:
+      - type: primary_key
+        columns:
+          - order_item_id
+
+      - type: foreign_key
+        columns:
+          - product_id
+        to: ref('products')
     columns:
       - name: order_item_id
         data_tests:
