@@ -8,6 +8,13 @@ models:
       - dbt_utils.expression_is_true:
           arguments:
             expression: "order_total = subtotal + tax_paid"
+    constraints:
+      - type: primary_key
+        columns:
+          - order_id
+      - type: foreign_key
+        columns:
+          - customer_id
     columns:
       - name: order_id
         description: The unique key of the orders mart.
