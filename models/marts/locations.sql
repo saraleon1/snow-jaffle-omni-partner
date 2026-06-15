@@ -6,4 +6,5 @@ locations as (
 
 )
 
-select * from locations
+select *,
+1 as test_col from locations
