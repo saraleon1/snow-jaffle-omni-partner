@@ -16,11 +16,14 @@ models:
           - unique
           - dbt_constraints.primary_key
       - name: order_id
+        config:
+          tags: ['test_tag']
         data_tests:
           - relationships:
               arguments:
                 to: ref('orders')
                 field: order_id
+
       - name: product_id
         data_tests:
           - dbt_constraints.foreign_key:
