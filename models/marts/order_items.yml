@@ -52,8 +52,9 @@ unit_tests:
           - { order_id: 2, product_id: 2 }
       - input: ref('stg_orders')
         rows:
-          - { order_id: 1 }
-          - { order_id: 2 }
+          - { order_id: 1, ordered_at: '2024-01-01 00:00:00' }
+          - { order_id: 2, ordered_at: '2024-01-02 00:00:00' }
+
     expect:
       rows:
         - { order_id: 1, product_id: 1, supply_cost: 4.50 }
@@ -178,13 +179,7 @@ metrics:
         - name: order_cost
           alias: cost
 
-  #Cumulative Metrics
-  - name: cumulative_revenue
-    description: The cumulative revenue for all orders.
-    label: Cumulative Revenue (All Time)
-    type: cumulative
-    type_params:
-      measure: revenue
+
 
 saved_queries:
   - name: revenue_metrics
