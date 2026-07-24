@@ -8,10 +8,7 @@ packages:
   - git: https://github.com/dbt-labs/dbt-audit-helper.git
     name: audit_helper
     revision: 71817f0a7fa3df9f63adb90db0cf28f7423f720b
-  - git: https://github.com/saraleon1/dbt-upstream-project.git
-    name: my_new_project
-    revision: f8de9b49f82c6b1ce92378dab04440a9561e128c
   - name: dbt_constraints
     package: Snowflake-Labs/dbt_constraints
     version: 1.0.8
-sha1_hash: 2761ff9a6a078912ba668ef88f0677f5fbb12b74
+sha1_hash: 5305d839b4c084543b80ab0b5627dcc3b00ba695
